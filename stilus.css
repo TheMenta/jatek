@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+header {
+    text-align: left;
+}
+main, header, nav, article, .kiskep, .nagykep, img, h2 {
+    border: 3px solid gray;
+    padding: 10px;
+}
+img {
+    margin:auto
+}
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr auto auto ;
+    margin:0;
+    padding-left: 0;
+    background-color: antiquewhite;
+}
+nav li {
+    padding: 10px;
+    list-style: none;
+    color: gray;
+    
+}
+.kiskep img, .nagykep img {
+    width:100%
+}
+.kiskep {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .kiskep{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 400px) {
+    .kiskep{
+        grid-template-columns: 1fr;
+    }
+    nav {
+        grid-template-columns: 1fr;
+    }
+}
